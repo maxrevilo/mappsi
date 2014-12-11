@@ -1,0 +1,94 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+html, body, #map-canvas {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Lato', sans-serif;
+	background-color: #f7f7f7;
+}
+
+.head{
+	margin-top:150px;
+}
+
+.head img{
+	margin-left: 50px;
+}
+
+.search{
+	width: 365px;
+	height: 40px;
+}
+.icon{
+	margin-left: 10px;
+	margin-bottom: -4px;
+}
+
+.content, .head{
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 30px
+}
+
+.content{
+	margin-top: 20px;
+}
+
+.content form{
+	margin-bottom: 10;
+}
+
+@keyframes loading_kf {
+    0% {opacity: 1}
+    100% {opacity: 0.3}
+}
+@-webkit-keyframes loading_kf {
+    0% {opacity: 1}
+    100% {opacity: 0.3}
+}
+
+.loading {
+    opacity: 0.3;
+    animation: loading_kf 0.5s linear 0s infinite alternate; 
+    -webkit-animation: loading_kf 0.5s linear 0s infinite alternate;
+}
+
+.content p {
+	font-size: 14px;
+	width: 100%;
+	text-align: center;
+	color:#0;
+	margin-top: 0;
+}
+
+.content .loading {
+	display: none;
+	color: rgb(184, 0, 0);
+	font-size: 17px;
+}
+
+input{
+	font-size: 20px;
+}
+
+:focus {outline:none;}
+
+.footer{
+	padding-top: 5px; 
+	height: 30px;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	color:#990000;
+	font-size: 11px;
+	text-align: center;
+}
+
+.footer info{
+}
+
+#map-canvas{
+	display: none;
+}

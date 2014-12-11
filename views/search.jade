@@ -1,0 +1,29 @@
+html(lang="en")
+    head
+        block title
+            title Mapsi - see how issues relate to the world we live in
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(rel="shortcut icon", href="/images/favicon.ico", type="image/x-icon")
+        link(rel="icon", href="/images/favicon.ico", type="image/x-icon")
+        link(rel="stylesheet", href="/css/map.css")
+        script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?v=3.exp")
+        script(type="text/javascript", src="https://code.jquery.com/jquery-1.11.1.min.js")
+        script(type="text/javascript", src="/js/process.js")
+
+    body
+        div#step
+            div.head
+                img(src="/images/logo.png", alt="")
+            div.content
+                //- form(action="/", method="post")
+                input(type='text', name="keyword").search#name
+                img(src="/images/search.png", alt="").icon#target
+                p.description
+                    | See how issues relate to the world we live in
+                p.loading
+                    | Watson is thinking the answer, he may take a while.
+            div.footer
+               | © Julian Pulgarin, Daniel Taylor, Christian Sepúlveda, Oliver Carmago - BlueMix Hackday 2014
+        div#map-canvas
